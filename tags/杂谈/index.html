@@ -15,6 +15,8 @@
     <link rel="alternative" href="atom.xml" title="岁寒社" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
     
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -61,11 +63,11 @@
         
             <a href="/" title="twitter" class="iconfont icon-twitter" target="_blank" rel="noopener"> </a>
         
-            <a href="/" title="github" class="iconfont icon-github" target="_blank" rel="noopener"> </a>
+            <a href="/suihanshe" title="github" class="iconfont icon-github" target="_blank" rel="noopener"> </a>
         
-            <a href="/img/logo.png" title="wechat" class="iconfont icon-wechat" target="_blank" rel="noopener"> </a>
+            <a href="/" title="wechat" class="iconfont icon-wechat" target="_blank" rel="noopener"> </a>
         
-            <a href="mailto:xxxx@gmail.com" title="email" class="iconfont icon-email" target="_blank" rel="noopener"> </a>
+            <a href="/Base64.decode(%22Y2hpbmFjaGVubXV5YW5nQDE2My5jb20=%22%22)" title="email" class="iconfont icon-email" target="_blank" rel="noopener"> </a>
         
 		<a href="#" class="iconfont icon-null"></a>
 	</p>
@@ -74,8 +76,6 @@
         &copy; 2021 岁寒社.
         <span> | </span>Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
         <span> | </span>Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a> by Fechin
-		
-		<span> | </span><a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">冀ICP备xxxxxxx号</a>
 		
     </p>
 </div>
@@ -97,6 +97,8 @@
     <div id="header">
         <div>
             <a class="image-logo" href="/"></a>
+			
+			<div class="iconfont icon-search switchsearch" href="/search/" title="搜索"></div>
 			
             <div class="iconfont icon-menu switchmenu"></div>
         </div>
@@ -122,6 +124,8 @@
 
 
 </body>
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
 
 <script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
@@ -187,6 +191,25 @@
 </div>
 
 
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
+        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 
